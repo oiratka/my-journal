@@ -29,7 +29,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_08_16_191558) do
     t.boolean "public"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "journal_writer_id", null: false
+    t.integer "journal_writer_id"
     t.index ["journal_writer_id"], name: "index_entries_on_journal_writer_id"
   end
 
